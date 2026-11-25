@@ -1,0 +1,10 @@
+[
+  {
+    "event_id": "aevt-001",
+    "activity_id": "a-001",
+    "action": "risk_review_opened",
+    "state": "done",
+    "at": "2026-08-15T11:20",
+    "note": "E-01 高值样本进入复核，先锁定已售票名单，不删除活动记录"
+  }
+]

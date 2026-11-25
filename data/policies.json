@@ -1,0 +1,36 @@
+[
+  {
+    "policy_id": "policy-2026-summer",
+    "version": "threshold-v1-0.8",
+    "effective_from": "2026-06-01T00:00",
+    "effective_to": "2026-08-15T00:00",
+    "indicator": "risk_value",
+    "threshold": 0.8,
+    "freshness_hours": 72,
+    "min_valid_samples": 1,
+    "required_indicators": ["risk_value"],
+    "max_receipt_hours": 6,
+    "rain_alert_mm": 20,
+    "rain_window_hours": 24,
+    "require_post_rain_sample": true,
+    "post_rain_sample_hours": 48,
+    "exceedance_memory_hours": 168
+  },
+  {
+    "policy_id": "policy-2026-summer",
+    "version": "threshold-v2-0.5",
+    "effective_from": "2026-08-15T00:00",
+    "effective_to": null,
+    "indicator": "risk_value",
+    "threshold": 0.5,
+    "freshness_hours": 72,
+    "min_valid_samples": 1,
+    "required_indicators": ["risk_value"],
+    "max_receipt_hours": 6,
+    "rain_alert_mm": 20,
+    "rain_window_hours": 24,
+    "require_post_rain_sample": true,
+    "post_rain_sample_hours": 48,
+    "exceedance_memory_hours": 168
+  }
+]

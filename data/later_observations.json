@@ -1,0 +1,37 @@
+[
+  {
+    "observation_id": "out-2026-e01-01",
+    "decision_id": "dec-2026-e01-weekend",
+    "entrance_id": "E-01",
+    "segment_id": "R-01",
+    "observed_at": "2026-08-16T11:30",
+    "observation_type": "later_lab_and_field_confirmation",
+    "risk_value": 0.82,
+    "threshold": 0.5,
+    "hazard_confirmed": true,
+    "note": "后续真实/合成回放观测确认高风险；用于回看，不参与当时决策"
+  },
+  {
+    "observation_id": "out-2026-e03-01",
+    "decision_id": "dec-2026-e03-weekend",
+    "entrance_id": "E-03",
+    "segment_id": "R-02",
+    "observed_at": "2026-08-16T11:00",
+    "observation_type": "later_lab_confirmation",
+    "risk_value": 0.18,
+    "threshold": 0.5,
+    "safe_confirmed": true,
+    "note": "后续观测安全，可用于评估当时限流是否偏保守"
+  },
+  {
+    "observation_id": "out-2026-autumn-e03",
+    "decision_id": "dec-2026-e03-weekend",
+    "entrance_id": "E-03",
+    "segment_id": "R-02",
+    "season": "2026-autumn",
+    "observed_at": "2026-11-20T10:00",
+    "observation_type": "later_seasonal_observation_batch",
+    "actual_state": "safe",
+    "note": "后续季节到达的真实/合成回放观测；通过显式 decision_id 做季节性回看，不冒充周末同期结果"
+  }
+]

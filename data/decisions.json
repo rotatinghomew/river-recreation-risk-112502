@@ -1,0 +1,582 @@
+[
+  {
+    "decision_id": "dec-2026-e01-weekend",
+    "decided_at": "2026-08-15T12:00",
+    "entrance_id": "E-01",
+    "segment_id": "R-01",
+    "selected_action": "hold",
+    "recommended_action": "hold",
+    "current_status": "hold",
+    "risk_level": "high",
+    "note": "冻结依据：高值、高风险分区、雨后样本未成熟",
+    "basis": {
+      "entrance_id": "E-01",
+      "entrance_name": "E-01",
+      "segment_id": "R-01",
+      "segment_version": {
+        "version": "current-import",
+        "fingerprint": "c728c6716d2c5b2b",
+        "version_source": "current-segment-record"
+      },
+      "flow_direction": "downstream",
+      "as_of": "2026-08-15T12:00",
+      "target_at": "2026-08-16T09:00",
+      "policy": {
+        "version": "threshold-v2-0.5",
+        "policy_id": "policy-2026-summer",
+        "threshold": 0.5,
+        "fingerprint": "4fb70f48639c5894",
+        "source": "policy-record",
+        "freshness_hours": 72,
+        "min_valid_samples": 1
+      },
+      "current_status": "hold",
+      "status_zh": "暂缓或关闭",
+      "recommended_action": "hold",
+      "decision": "hold",
+      "action_zh": "暂缓",
+      "risk_level": "high",
+      "evidence_state": "explicit_above_threshold",
+      "counts": {
+        "applicable_samples": 1,
+        "effective_direct_samples": 1,
+        "explicit_below_threshold": 0,
+        "explicit_above_threshold": 1,
+        "below_for_target": 0,
+        "above_for_target": 1,
+        "volunteer_observations": 0,
+        "visitor_feedback": 0
+      },
+      "latest_effective_sample_id": "w-001",
+      "supporting_samples": [
+        {
+          "sample_id": "w-001",
+          "collected_at": "2026-08-14T07:00",
+          "available_at": "2026-08-15T09:00",
+          "classification": "above_threshold",
+          "maturity": "available",
+          "stage": "available",
+          "value": 0.7,
+          "threshold": 0.5,
+          "is_effective": true,
+          "effective_for_target": true,
+          "reasons": [],
+          "relation": {
+            "segment_id": "R-01",
+            "entrance_id": "E-01",
+            "coverage": "full",
+            "covered_entrances": null,
+            "flow_direction": "downstream",
+            "applies": true,
+            "relation": "full_segment_coverage"
+          }
+        }
+      ],
+      "segment_sample_audit": [
+        {
+          "sample_id": "w-001",
+          "segment_id": "R-01",
+          "collected_at": "2026-08-14T07:00",
+          "received_at": "2026-08-14T12:00",
+          "available_at": "2026-08-15T09:00",
+          "coverage": "full",
+          "quality": "valid",
+          "stage": "available",
+          "maturity": "available",
+          "maturity_status": "available",
+          "is_mature": true,
+          "is_complete": true,
+          "preservation_ok": true,
+          "indicators": {
+            "risk_value": 0.7
+          },
+          "missing_indicators": [],
+          "value": 0.7,
+          "threshold": 0.5,
+          "threshold_version": "threshold-v2-0.5",
+          "policy_fingerprint": "4fb70f48639c5894",
+          "age_hours": 29.0,
+          "stale": false,
+          "is_usable": true,
+          "is_effective": true,
+          "threshold_state": "at_or_above_threshold",
+          "classification": "above_threshold",
+          "reasons": [],
+          "relation": {
+            "segment_id": "R-01",
+            "entrance_id": "E-01",
+            "coverage": "full",
+            "covered_entrances": null,
+            "flow_direction": "downstream",
+            "applies": true,
+            "relation": "full_segment_coverage"
+          },
+          "applies_to_entrance": true,
+          "effective_for_target": true,
+          "stale_at_target": false
+        },
+        {
+          "sample_id": "w-002",
+          "segment_id": "R-01",
+          "collected_at": "2026-08-15T07:00",
+          "received_at": null,
+          "available_at": null,
+          "coverage": "partial",
+          "quality": "pending",
+          "stage": "collected_awaiting_receipt",
+          "maturity": "collected_awaiting_receipt",
+          "maturity_status": "collected_awaiting_receipt",
+          "is_mature": false,
+          "is_complete": false,
+          "preservation_ok": true,
+          "indicators": {
+            "risk_value": null
+          },
+          "missing_indicators": [
+            "risk_value"
+          ],
+          "value": null,
+          "threshold": 0.5,
+          "threshold_version": "threshold-v2-0.5",
+          "policy_fingerprint": "4fb70f48639c5894",
+          "age_hours": 5.0,
+          "stale": false,
+          "is_usable": false,
+          "is_effective": false,
+          "threshold_state": "unknown",
+          "classification": "pending_or_processing",
+          "reasons": [
+            "not_received",
+            "quality_pending",
+            "missing_indicator_value"
+          ],
+          "relation": {
+            "segment_id": "R-01",
+            "entrance_id": "E-01",
+            "coverage": "partial",
+            "covered_entrances": null,
+            "flow_direction": "downstream",
+            "applies": false,
+            "relation": "partial_segment_scope_not_attributable"
+          },
+          "applies_to_entrance": false,
+          "effective_for_target": false,
+          "stale_at_target": false
+        }
+      ],
+      "sampling_plans": [],
+      "gaps": [
+        {
+          "code": "risk_zone_restriction",
+          "message_zh": "入口位于生效中的高风险分区 zone-r01-runoff；分区管控范围优先于单点低值样本。",
+          "severity": "critical"
+        },
+        {
+          "code": "missing_post_rain_sample",
+          "message_zh": "监测到高风险降雨，但缺少雨后完整有效样本；无采样时段不能视为安全。",
+          "severity": "critical"
+        }
+      ],
+      "weather": {
+        "rain_total_mm": 35.0,
+        "rain_window_hours": 24.0,
+        "rain_alert_mm": 20.0,
+        "rain_alert": true,
+        "latest_heavy_rain_at": "2026-08-15T06:00",
+        "max_water_level": 1.8,
+        "records": [
+          {
+            "observed_at": "2026-08-15T06:00",
+            "rain_mm": 35,
+            "water_level": 1.8
+          }
+        ],
+        "interpretation": "rainfall_is_context_not_water_quality_evidence"
+      },
+      "risk_zones": [
+        {
+          "zone_id": "zone-r01-runoff",
+          "segment_id": "R-01",
+          "scope": "segment",
+          "risk_level": "high",
+          "required_action": "hold",
+          "effective_from": "2026-08-15T06:00",
+          "effective_to": "2026-08-17T23:59",
+          "reason": "35 mm 降雨后的径流影响范围，与 w-001 高值一致"
+        }
+      ],
+      "post_rain_check": {
+        "required": true,
+        "satisfied": false,
+        "rain_at": "2026-08-15T06:00",
+        "max_delay_hours": 48.0,
+        "effective_sample_ids": [],
+        "reason": "missing_post_rain_effective_sample"
+      },
+      "supplement_required": false,
+      "volunteer_observations": [],
+      "visitor_feedback": [],
+      "supplement_evaluation": null,
+      "basis_fingerprints": {
+        "policy": "4fb70f48639c5894",
+        "segment": "c728c6716d2c5b2b"
+      }
+    },
+    "record_fingerprint": "ed91385ade82f6ff"
+  },
+  {
+    "decision_id": "dec-2026-e03-weekend",
+    "decided_at": "2026-08-15T12:00",
+    "entrance_id": "E-03",
+    "segment_id": "R-02",
+    "selected_action": "limit_capacity",
+    "recommended_action": "limit_capacity",
+    "current_status": "limited",
+    "risk_level": "moderate",
+    "note": "冻结依据：低值但缺雨后样本；原补采窗口冲突但有替代窗口",
+    "basis": {
+      "entrance_id": "E-03",
+      "entrance_name": "E-03",
+      "segment_id": "R-02",
+      "segment_version": {
+        "version": "current-import",
+        "fingerprint": "69bfd02a39a98c05",
+        "version_source": "current-segment-record"
+      },
+      "flow_direction": "downstream",
+      "as_of": "2026-08-15T12:00",
+      "target_at": "2026-08-16T09:00",
+      "policy": {
+        "version": "threshold-v2-0.5",
+        "policy_id": "policy-2026-summer",
+        "threshold": 0.5,
+        "fingerprint": "4fb70f48639c5894",
+        "source": "policy-record",
+        "freshness_hours": 72,
+        "min_valid_samples": 1
+      },
+      "current_status": "limited",
+      "status_zh": "证据有限/建议限流",
+      "recommended_action": "limit_capacity",
+      "decision": "limit_capacity",
+      "action_zh": "限流",
+      "risk_level": "moderate",
+      "evidence_state": "explicit_below_threshold",
+      "counts": {
+        "applicable_samples": 1,
+        "effective_direct_samples": 1,
+        "explicit_below_threshold": 1,
+        "explicit_above_threshold": 0,
+        "below_for_target": 1,
+        "above_for_target": 0,
+        "volunteer_observations": 0,
+        "visitor_feedback": 0
+      },
+      "latest_effective_sample_id": "w-003",
+      "supporting_samples": [
+        {
+          "sample_id": "w-003",
+          "collected_at": "2026-08-14T07:00",
+          "available_at": "2026-08-14T18:00",
+          "classification": "below_threshold",
+          "maturity": "available",
+          "stage": "available",
+          "value": 0.2,
+          "threshold": 0.5,
+          "is_effective": true,
+          "effective_for_target": true,
+          "reasons": [],
+          "relation": {
+            "segment_id": "R-02",
+            "entrance_id": "E-03",
+            "coverage": "full",
+            "covered_entrances": null,
+            "flow_direction": "downstream",
+            "applies": true,
+            "relation": "full_segment_coverage"
+          }
+        }
+      ],
+      "segment_sample_audit": [
+        {
+          "sample_id": "w-003",
+          "segment_id": "R-02",
+          "collected_at": "2026-08-14T07:00",
+          "received_at": "2026-08-14T12:00",
+          "available_at": "2026-08-14T18:00",
+          "coverage": "full",
+          "quality": "valid",
+          "stage": "available",
+          "maturity": "available",
+          "maturity_status": "available",
+          "is_mature": true,
+          "is_complete": true,
+          "preservation_ok": true,
+          "indicators": {
+            "risk_value": 0.2
+          },
+          "missing_indicators": [],
+          "value": 0.2,
+          "threshold": 0.5,
+          "threshold_version": "threshold-v2-0.5",
+          "policy_fingerprint": "4fb70f48639c5894",
+          "age_hours": 29.0,
+          "stale": false,
+          "is_usable": true,
+          "is_effective": true,
+          "threshold_state": "below_threshold",
+          "classification": "below_threshold",
+          "reasons": [],
+          "relation": {
+            "segment_id": "R-02",
+            "entrance_id": "E-03",
+            "coverage": "full",
+            "covered_entrances": null,
+            "flow_direction": "downstream",
+            "applies": true,
+            "relation": "full_segment_coverage"
+          },
+          "applies_to_entrance": true,
+          "effective_for_target": true,
+          "stale_at_target": false
+        }
+      ],
+      "sampling_plans": [],
+      "gaps": [
+        {
+          "code": "missing_post_rain_sample",
+          "message_zh": "监测到高风险降雨，但缺少雨后完整有效样本；无采样时段不能视为安全。",
+          "severity": "critical"
+        },
+        {
+          "code": "supplement_activity_conflict",
+          "message_zh": "补采时段与同入口/同河段已售或已确认活动 a-002 重叠；若不调整活动或船期，补采不能被当作已落实；与其他入口活动 a-001 仅时间重叠，需日历协调但不直接改变该入口结论；因此雨后证据缺口不能关闭，风险结论只能保持暂缓/限流或证据不足，不能升级为继续开放",
+          "severity": "critical"
+        }
+      ],
+      "weather": {
+        "rain_total_mm": 35.0,
+        "rain_window_hours": 24.0,
+        "rain_alert_mm": 20.0,
+        "rain_alert": true,
+        "latest_heavy_rain_at": "2026-08-15T06:00",
+        "max_water_level": 1.8,
+        "records": [
+          {
+            "observed_at": "2026-08-15T06:00",
+            "rain_mm": 35,
+            "water_level": 1.8
+          }
+        ],
+        "interpretation": "rainfall_is_context_not_water_quality_evidence"
+      },
+      "risk_zones": [],
+      "post_rain_check": {
+        "required": true,
+        "satisfied": false,
+        "rain_at": "2026-08-15T06:00",
+        "max_delay_hours": 48.0,
+        "effective_sample_ids": [],
+        "reason": "missing_post_rain_effective_sample"
+      },
+      "supplement_required": true,
+      "volunteer_observations": [],
+      "visitor_feedback": [],
+      "supplement_evaluation": {
+        "trip_id": "trip-r02-postrain",
+        "segment_id": "R-02",
+        "entrance_ids": [
+          "E-03"
+        ],
+        "start": "2026-08-16T08:00",
+        "end": "2026-08-16T10:00",
+        "boat_checks": [
+          {
+            "resource_id": "boat-01",
+            "resource_type": "boat",
+            "available": true
+          }
+        ],
+        "staff_checks": [
+          {
+            "resource_id": "sampler-01",
+            "resource_type": "staff",
+            "available": true
+          }
+        ],
+        "resource_conflicts": [],
+        "trip_conflicts": [],
+        "activity_conflicts": [
+          {
+            "activity_id": "a-001",
+            "entrance_id": "E-01",
+            "status": "sold",
+            "starts_at": "2026-08-16T09:00",
+            "ends_at": "2026-08-16T11:00",
+            "overlap_minutes": 60,
+            "same_entrance_or_segment": false,
+            "spatial_relation": "time_overlap_only"
+          },
+          {
+            "activity_id": "a-002",
+            "entrance_id": "E-03",
+            "status": "confirmed",
+            "starts_at": "2026-08-16T09:00",
+            "ends_at": "2026-08-16T11:00",
+            "overlap_minutes": 60,
+            "same_entrance_or_segment": true,
+            "spatial_relation": "covered_area"
+          }
+        ],
+        "has_conflict": true,
+        "resource_feasible": true,
+        "can_confirm": false,
+        "blocking_activity_conflicts": [
+          {
+            "activity_id": "a-002",
+            "entrance_id": "E-03",
+            "status": "confirmed",
+            "starts_at": "2026-08-16T09:00",
+            "ends_at": "2026-08-16T11:00",
+            "overlap_minutes": 60,
+            "same_entrance_or_segment": true,
+            "spatial_relation": "covered_area"
+          }
+        ],
+        "assigned_boat_id": "boat-01",
+        "assigned_staff_ids": [
+          "sampler-01"
+        ],
+        "risk_impact": {
+          "changes_risk_conclusion": true,
+          "blocks_upgrade_to_open": true,
+          "message": "补采时段与同入口/同河段已售或已确认活动 a-002 重叠；若不调整活动或船期，补采不能被当作已落实；与其他入口活动 a-001 仅时间重叠，需日历协调但不直接改变该入口结论；因此雨后证据缺口不能关闭，风险结论只能保持暂缓/限流或证据不足，不能升级为继续开放"
+        },
+        "alternative_slots": [
+          {
+            "trip_id": null,
+            "segment_id": "R-02",
+            "entrance_ids": [
+              "E-03"
+            ],
+            "start": "2026-08-15T13:00",
+            "end": "2026-08-15T15:00",
+            "boat_checks": [
+              {
+                "resource_id": "boat-01",
+                "resource_type": "boat",
+                "available": true
+              }
+            ],
+            "staff_checks": [
+              {
+                "resource_id": "sampler-01",
+                "resource_type": "staff",
+                "available": true
+              }
+            ],
+            "resource_conflicts": [],
+            "trip_conflicts": [],
+            "activity_conflicts": [],
+            "has_conflict": false,
+            "resource_feasible": true,
+            "can_confirm": true,
+            "blocking_activity_conflicts": [],
+            "assigned_boat_id": "boat-01",
+            "assigned_staff_ids": [
+              "sampler-01"
+            ],
+            "risk_impact": {
+              "changes_risk_conclusion": false,
+              "blocks_upgrade_to_open": false,
+              "message": "补采资源可按时落实；在新有效结果到达前，入口仍保持证据缺口而非安全。"
+            }
+          },
+          {
+            "trip_id": null,
+            "segment_id": "R-02",
+            "entrance_ids": [
+              "E-03"
+            ],
+            "start": "2026-08-15T14:00",
+            "end": "2026-08-15T16:00",
+            "boat_checks": [
+              {
+                "resource_id": "boat-01",
+                "resource_type": "boat",
+                "available": true
+              }
+            ],
+            "staff_checks": [
+              {
+                "resource_id": "sampler-01",
+                "resource_type": "staff",
+                "available": true
+              }
+            ],
+            "resource_conflicts": [],
+            "trip_conflicts": [],
+            "activity_conflicts": [],
+            "has_conflict": false,
+            "resource_feasible": true,
+            "can_confirm": true,
+            "blocking_activity_conflicts": [],
+            "assigned_boat_id": "boat-01",
+            "assigned_staff_ids": [
+              "sampler-01"
+            ],
+            "risk_impact": {
+              "changes_risk_conclusion": false,
+              "blocks_upgrade_to_open": false,
+              "message": "补采资源可按时落实；在新有效结果到达前，入口仍保持证据缺口而非安全。"
+            }
+          },
+          {
+            "trip_id": null,
+            "segment_id": "R-02",
+            "entrance_ids": [
+              "E-03"
+            ],
+            "start": "2026-08-15T15:00",
+            "end": "2026-08-15T17:00",
+            "boat_checks": [
+              {
+                "resource_id": "boat-01",
+                "resource_type": "boat",
+                "available": true
+              }
+            ],
+            "staff_checks": [
+              {
+                "resource_id": "sampler-01",
+                "resource_type": "staff",
+                "available": true
+              }
+            ],
+            "resource_conflicts": [],
+            "trip_conflicts": [],
+            "activity_conflicts": [],
+            "has_conflict": false,
+            "resource_feasible": true,
+            "can_confirm": true,
+            "blocking_activity_conflicts": [],
+            "assigned_boat_id": "boat-01",
+            "assigned_staff_ids": [
+              "sampler-01"
+            ],
+            "risk_impact": {
+              "changes_risk_conclusion": false,
+              "blocks_upgrade_to_open": false,
+              "message": "补采资源可按时落实；在新有效结果到达前，入口仍保持证据缺口而非安全。"
+            }
+          }
+        ]
+      },
+      "basis_fingerprints": {
+        "policy": "4fb70f48639c5894",
+        "segment": "69bfd02a39a98c05"
+      }
+    },
+    "record_fingerprint": "cdb80b669dcb8c1f"
+  }
+]

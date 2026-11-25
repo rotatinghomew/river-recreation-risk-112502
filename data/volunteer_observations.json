@@ -1,0 +1,12 @@
+[
+  {
+    "observation_id": "vol-001",
+    "segment_id": "R-01",
+    "entrance_id": "E-02",
+    "observed_at": "2026-08-15T08:20",
+    "observer": "合成志愿者",
+    "severity": "medium",
+    "signals": ["turbidity", "odor"],
+    "note": "雨后水体浑浊并伴有轻微异味；仅作现场背景"
+  }
+]

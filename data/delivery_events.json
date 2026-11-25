@@ -1,0 +1,10 @@
+[
+  {
+    "event_id": "delivery-n001-1",
+    "notice_id": "n-001",
+    "event_type": "delivered",
+    "at": "2026-08-14T15:04",
+    "channel": "sms-and-sign",
+    "detail": {"recipients": 128}
+  }
+]

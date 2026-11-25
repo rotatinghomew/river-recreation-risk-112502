@@ -1,0 +1,18 @@
+[
+  {
+    "arrangement_id": "arr-e01-weekend",
+    "entrance_id": "E-01",
+    "target_at": "2026-08-16T09:00",
+    "status": "unconfirmed",
+    "recommended_action": "continue_open",
+    "note": "尚未向公众确认的开放安排，允许被新化验结论刷新"
+  },
+  {
+    "arrangement_id": "arr-e03-weekend",
+    "entrance_id": "E-03",
+    "target_at": "2026-08-16T09:00",
+    "status": "confirmed",
+    "recommended_action": "continue_open",
+    "note": "已与场地方确认；新风险只能生成变更和活动处置，不能静默抹掉"
+  }
+]

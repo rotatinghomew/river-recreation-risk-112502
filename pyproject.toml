@@ -7,3 +7,10 @@ name = "river-recreation-risk"
 version = "0.1.0"
 description = "河道开放风险证据与公告排期"
 requires-python = ">=3.11"
+
+[project.scripts]
+river-risk = "river_recreation_risk.cli:main"
+river-risk-web = "river_recreation_risk.web:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

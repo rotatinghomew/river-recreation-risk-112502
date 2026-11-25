@@ -1,0 +1,30 @@
+[
+  {
+    "resource_type": "boat",
+    "resource_id": "boat-01",
+    "name": "采样船 1",
+    "available_windows": [
+      {"start": "2026-08-15T13:00", "end": "2026-08-15T18:00"},
+      {"start": "2026-08-16T07:00", "end": "2026-08-16T12:00"}
+    ]
+  },
+  {
+    "resource_type": "staff",
+    "resource_id": "sampler-01",
+    "name": "采样员 林",
+    "roles": ["sampler"],
+    "available_windows": [
+      {"start": "2026-08-15T13:00", "end": "2026-08-15T18:00"},
+      {"start": "2026-08-16T07:00", "end": "2026-08-16T12:00"}
+    ]
+  },
+  {
+    "resource_type": "staff",
+    "resource_id": "sampler-02",
+    "name": "采样员 周",
+    "roles": ["sampler"],
+    "available_windows": [
+      {"start": "2026-08-16T07:00", "end": "2026-08-16T12:00"}
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "zone_id": "zone-r01-runoff",
+    "segment_id": "R-01",
+    "scope": "segment",
+    "risk_level": "high",
+    "required_action": "hold",
+    "effective_from": "2026-08-15T06:00",
+    "effective_to": "2026-08-17T23:59",
+    "reason": "35 mm 降雨后的径流影响范围，与 w-001 高值一致"
+  }
+]
