@@ -1,0 +1,12 @@
+[
+  {
+    "observed_at": "2026-08-14T06:00",
+    "rain_mm": 2,
+    "water_level": 1.1
+  },
+  {
+    "observed_at": "2026-08-15T06:00",
+    "rain_mm": 35,
+    "water_level": 1.8
+  }
+]

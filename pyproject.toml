@@ -1,0 +1,9 @@
+[build-system]
+requires = []
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "river-recreation-risk"
+version = "0.1.0"
+description = "河道开放风险证据与公告排期"
+requires-python = ">=3.11"

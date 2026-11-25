@@ -1,0 +1,17 @@
+[
+  {
+    "segment_id": "R-01",
+    "entrances": [
+      "E-01",
+      "E-02"
+    ],
+    "flow_direction": "downstream"
+  },
+  {
+    "segment_id": "R-02",
+    "entrances": [
+      "E-03"
+    ],
+    "flow_direction": "downstream"
+  }
+]

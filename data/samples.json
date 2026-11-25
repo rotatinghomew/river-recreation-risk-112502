@@ -1,0 +1,32 @@
+[
+  {
+    "sample_id": "w-001",
+    "segment_id": "R-01",
+    "collected_at": "2026-08-14T07:00",
+    "received_at": "2026-08-14T12:00",
+    "available_at": "2026-08-15T09:00",
+    "coverage": "full",
+    "quality": "valid",
+    "risk_value": 0.7
+  },
+  {
+    "sample_id": "w-002",
+    "segment_id": "R-01",
+    "collected_at": "2026-08-15T07:00",
+    "received_at": null,
+    "available_at": null,
+    "coverage": "partial",
+    "quality": "pending",
+    "risk_value": null
+  },
+  {
+    "sample_id": "w-003",
+    "segment_id": "R-02",
+    "collected_at": "2026-08-14T07:00",
+    "received_at": "2026-08-14T12:00",
+    "available_at": "2026-08-14T18:00",
+    "coverage": "full",
+    "quality": "valid",
+    "risk_value": 0.2
+  }
+]

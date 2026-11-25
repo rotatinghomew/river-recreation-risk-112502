@@ -1,0 +1,16 @@
+[
+  {
+    "activity_id": "a-001",
+    "entrance_id": "E-01",
+    "starts_at": "2026-08-16T09:00",
+    "capacity": 20,
+    "status": "sold"
+  },
+  {
+    "activity_id": "a-002",
+    "entrance_id": "E-03",
+    "starts_at": "2026-08-16T09:00",
+    "capacity": 12,
+    "status": "confirmed"
+  }
+]
